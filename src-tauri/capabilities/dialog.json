@@ -1,0 +1,9 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "dialog-permissions",
+  "description": "dialog:default enables native OS dialog windows, used for the folder selection dialog when adding a new project and for confirmation prompts.",
+  "windows": ["main"],
+  "permissions": [
+    "dialog:default"
+  ]
+}

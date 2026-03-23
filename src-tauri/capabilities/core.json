@@ -1,0 +1,10 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "core-permissions",
+  "description": "Tauri core API permissions: core:default provides essential window, event, path, app, image, resources, menu, and tray APIs. core:window:allow-set-always-on-top enables the always-on-top window pinning feature.",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-set-always-on-top"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "notification-permissions",
+  "description": "notification:default enables displaying system notifications for idle terminal reminders, alerting the user when a terminal session has been inactive.",
+  "windows": ["main"],
+  "permissions": [
+    "notification:default"
+  ]
+}

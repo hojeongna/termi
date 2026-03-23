@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Base capability — kept for schema compatibility. All permissions are split into domain-specific capability files: core.json, notification.json, dialog.json, opener.json. App data is stored at $APPDATA/termi/ and accessed only from the Rust layer, so no fs permissions are required.",
+  "windows": ["main"],
+  "permissions": []
+}

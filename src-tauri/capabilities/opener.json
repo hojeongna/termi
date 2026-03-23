@@ -1,0 +1,9 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "opener-permissions",
+  "description": "opener:default allows opening project folders in the system file explorer (e.g., Windows Explorer) from within the app.",
+  "windows": ["main"],
+  "permissions": [
+    "opener:default"
+  ]
+}

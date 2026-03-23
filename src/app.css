@@ -1,0 +1,97 @@
+@import 'pretendard/dist/web/static/pretendard-subset.css';
+
+:root {
+  --termi-sidebar-width: 320px;
+  --termi-bg-primary: #1e1e2e;
+  --termi-bg-secondary: #181825;
+  --termi-bg-surface: #313244;
+  --termi-text-primary: #cdd6f4;
+  --termi-text-secondary: #a6adc8;
+  --termi-accent: #89b4fa;
+  --termi-accent-hover: #74c7ec;
+  --termi-border: #45475a;
+  --termi-danger: #f38ba8;
+  --termi-success: #a6e3a1;
+  --termi-status-working: #22c55e;
+  --termi-status-waiting: #eab308;
+  --termi-status-completed: #ef4444;
+
+  --termi-font-mono: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+
+  --termi-spacing-xs: 4px;
+  --termi-spacing-sm: 8px;
+  --termi-spacing-md: 16px;
+  --termi-spacing-lg: 24px;
+
+  --termi-font-size-xs: 12px;
+  --termi-font-size-sm: 13px;
+  --termi-font-size-base: 15px;
+  --termi-font-size-lg: 18px;
+  --termi-font-size-md: 15px;
+  --termi-font-size-xl: 32px;
+
+  --termi-overlay-bg: rgba(0, 0, 0, 0.5);
+
+  --termi-radius-sm: 4px;
+  --termi-radius-md: 8px;
+
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, sans-serif;
+  font-size: var(--termi-font-size-base);
+  color: var(--termi-text-primary);
+  background-color: var(--termi-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme="light"] {
+  --termi-bg-primary: #eff1f5;
+  --termi-bg-secondary: #e6e9ef;
+  --termi-bg-surface: #ccd0da;
+  --termi-text-primary: #4c4f69;
+  --termi-text-secondary: #6c6f85;
+  --termi-accent: #1e66f5;
+  --termi-accent-hover: #209fb5;
+  --termi-border: #bcc0cc;
+  --termi-danger: #d20f39;
+  --termi-success: #40a02b;
+  --termi-status-working: #40a02b;
+  --termi-status-waiting: #df8e1d;
+  --termi-status-completed: #d20f39;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--termi-accent);
+  outline-offset: 2px;
+}
+
+.error-message {
+  color: var(--termi-danger);
+  font-size: var(--termi-font-size-xs, 12px);
+}
